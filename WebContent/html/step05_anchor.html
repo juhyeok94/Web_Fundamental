@@ -1,0 +1,54 @@
+<!--step05_anchor-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnChour</title>
+    <style>
+        div{
+            background-color: green;
+            width: 600px;
+            height: 20000px;
+        }
+    </style>
+</head>
+<body>
+   <h1>a(anchor) 요소는 하이퍼 링크, 책갈피, 메일, 자바 스크립트를 수행할수 있음</h1> 
+   <h2>상태경로 이동</h2>
+    <!--자기를 기점으로 들어감(앞에가 뭔지 모름) 상대경로-->
+   <a href="step02_blockElement.html">블럭요소 데모</a>
+   <a href="./step02_blockElement.html">인라인요소 데모</a>
+   <a href="../notice/list.html">공지사항 리스트</a>
+
+   <!--web root 디렉토리(최상위) 에서 찾아가는 절대 경로, 앞에 http://localhost가 생략되어 있음-->
+   <a href="/notice/list.html">공지사항 리스트</a>
+
+   <!--외부에 있는 절대경로-->
+   <h2>절대경로 이동</h2>
+   <a href="http://www.naver.com">네이버</a>
+   <a href="http://www.daum.net">다음</a>
+
+   <h2>새로운 창을 열어서 이동</h2>
+    <a href="../notice/list.html" target="_blank">공지사항 리스트(새창-_blank)</a>
+    <!--새로운 창 : target="_blank"-->
+    <a href="../notice/list.html" target="_self">공지사항 리스트(새창-_self)</a>
+
+
+    <h2>메일 보내기</h2>
+    <a href="mailto:syh@hbilab.com">메일 보내기</a>
+
+    <h2>전화걸기(모바일)</h2>
+    <a href="tel:01030241703">전화 걸기</a>
+
+    <h2>자바스크립트 호출</h2>
+    <a href="javascript:alert('잘하고 있어?');">자바 스크립트 호출</a>
+    </a>
+    
+    <h2>책갈피</h2>
+    <a href="#bottom">특정영역으로 이동</a>
+    <!--reference는 특정영역으로 이동할때 사용-->
+    <div></div>
+    <p id="bottom">bottom</p>
+</body>
+</html>

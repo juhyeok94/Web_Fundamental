@@ -1,0 +1,28 @@
+<!--step01_css.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>external css & internal css & inline css</title>
+    <link href="custom.css" rel="stylesheet" type="text/css">
+    <!--외부 css-->
+    <style>
+        div{
+            background-color: pink;
+        }
+        span{
+            font-size: 9px !important;
+        }
+    </style>
+    <!--내부 css-->
+</head>
+<body>
+    <div>div</div>
+    <p>p1</p>
+    <span style="font-size:20px !important;">span</span>
+    <!--inline 
+        스타일을 적용할거면 인라인보다 외부가 좋다. 직접적으로 스타일 입력하는건 안좋음css-->
+    <!--inline이 최우선 순위 important가 똑같이 있다면 inline 우선-->
+</body>
+</html>
