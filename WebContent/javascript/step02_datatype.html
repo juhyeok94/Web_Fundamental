@@ -1,0 +1,58 @@
+<!--step02_datatype.htmml-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavasriptData Type</title>
+</head>
+<script>
+    //1. number type
+    let num1 = 10;
+    let num2 = 20.1;
+
+    console.log(typeof num1);
+    console.log(typeof num2);
+    
+    //2. string 
+    let myName = "성성성";
+    let yourName = "박박박";
+
+    console.log(typeof myName);
+    console.log(typeof yourName);
+
+    //3. boolean 
+    let isRun = true;
+    let isGreater = 10 > 5; 
+    console.log(typeof isRun); 
+    console.log(typeof isGreater);
+
+    let a1 = 10;
+    let a2 = "10";
+    console.log(a1==a2); //==값 비교
+    console.log(a1===a2); //===값 비교 & 자료형 비교
+
+    //4. undefined
+    let a3;
+    console.log(typeof a3);
+
+    //5. array type(object)
+    const names = ['성성성', '손손손', '이이이'];
+    console.log(typeof names);
+
+    //6. (plain) object type 
+    const obj = {num : 1, name : '성성성', id:'sung'};
+    console.log(typeof obj);
+
+    //7. funtion 
+    const f = function(){
+    }
+    console.log(typeof f);
+
+
+</script>    
+
+<body>
+    
+</body>
+</html>
